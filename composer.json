@@ -8,5 +8,8 @@
     "classmap": [
       "app/"
     ]
+  },
+  "require": {
+    "symfony/routing": "^7.1"
   }
 }
