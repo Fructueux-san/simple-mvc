@@ -1,0 +1,12 @@
+{
+  "name": "fructueux-san/simple-mvc",
+  "description": "Simple mvc framework with php",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app"
+    },
+    "classmap": [
+      "app/"
+    ]
+  }
+}
