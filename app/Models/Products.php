@@ -2,7 +2,9 @@
 
 namespace App\Models;
 
-class Product 
+use App\Db\DbConnection;
+
+class Product extends DbConnection
 {
     protected $id;
     protected $title;

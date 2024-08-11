@@ -10,7 +10,8 @@ define("URL_SUBFOLDER", "");
 
 
 //DB Params
-define("DB_HOST", "localhost");
-define("DB_USER", "root");
-define("DB_PASS", "hahahaha");
-define("DB_NAME", "supersitedb");
+define("DB_TYPE", "mysql");
+define("DB_HOST", "database");
+define("DB_USER", "thedbuser");
+define("DB_PASS", "thedbuserpassword");
+define("DB_NAME", "enadb");

@@ -1,0 +1,24 @@
+services:
+  ena:
+    container_name: ena-backend
+    build: .
+    environment:
+      - ENV=prod
+      - DB_HOST=database
+    restart: always
+    volumes:
+      - ./:/var/www/html/
+    ports:
+      - "8080:80"
+    depends_on: 
+      - database
+
+  database:
+    container_name: ena-database
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=therootpassword
+      - MYSQL_DATABASE=enadb
+      - MYSQL_USER=thedbuser
+      - MYSQL_PASSWORD=thedbuserpassword
+    restart: always

@@ -12,3 +12,8 @@ $routes->add("product",
 $routes->add('homepage', 
   new Route(constant('URL_SUBFOLDER').'/', array('controller' => 'PageController', 'method' => 'indexAction'), array())
 );
+
+
+$routes->add('admin-test', 
+  new Route(constant('URL_SUBFOLDER').'/admin', array('controller' => 'Admin\AdminController', 'method' => 'index'), array())
+);
